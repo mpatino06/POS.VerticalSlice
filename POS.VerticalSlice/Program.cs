@@ -1,3 +1,4 @@
+using Mapster;
 using Microsoft.EntityFrameworkCore;
 using POS.VerticalSlice.Exceptions;
 using POS.VerticalSlice.Features.Product;
@@ -23,6 +24,9 @@ builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Progr
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// congigure Mapster to scan the assembly for mapping configurations
+TypeAdapterConfig.GlobalSettings.Scan(typeof(GetProductMappingConfig).Assembly);
 
 var app = builder.Build();
 

@@ -25,10 +25,6 @@
   <ItemGroup>
     <Folder Include="Domain\" />
     <Folder Include="Features\Category\CreateCategory\" />
-    <Folder Include="Features\Product\GetAllProduct\" />
-    <Folder Include="Features\Product\GetProductById\" />
-    <Folder Include="Features\Product\DeleteProduct\" />
-    <Folder Include="Features\Product\UpdateProduct\" />
     <Folder Include="Infrastructure\" />
   </ItemGroup>
 
